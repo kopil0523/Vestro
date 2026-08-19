@@ -310,7 +310,6 @@ ul {
     gap: 30px;
 }
 
-/* Menu Card */
 .menu-card {
     background: var(--card-color);
     border-radius: 15px;
@@ -537,8 +536,161 @@ footer {
     color: #666666;
 }
 
-/* ============ RESPONSIVE DESIGN (MOBILE) ============ */
-@media (max-width: 768px) {
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Large Screens (Desktops > 1200px) */
+@media (min-width: 1200px) {
+    .section-padding {
+        padding: 80px 15%;
+    }
+    
+    .navbar {
+        padding: 20px 15%;
+    }
+    
+    .hero-content h1 {
+        font-size: 5rem;
+        letter-spacing: 10px;
+    }
+    
+    .menu-items {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    
+    .footer-content {
+        padding: 60px 15% 30px;
+    }
+}
+
+/* Regular Laptop Screens (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section-padding {
+        padding: 80px 8%;
+    }
+    
+    .navbar {
+        padding: 20px 8%;
+    }
+    
+    .hero-content h1 {
+        font-size: 4rem;
+        letter-spacing: 8px;
+    }
+    
+    .menu-items {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    
+    .footer-content {
+        padding: 60px 8% 30px;
+    }
+}
+
+/* Tablet Screens (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-padding {
+        padding: 60px 5%;
+    }
+    
+    .navbar {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .nav-menu {
+        gap: 15px;
+    }
+    
+    .nav-menu a {
+        font-size: 0.85rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .btn-nav {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+    }
+    
+    .hero {
+        height: 70vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 3.5rem;
+        letter-spacing: 6px;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+        letter-spacing: 4px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .about {
+        gap: 30px;
+    }
+    
+    .about-img {
+        min-width: 100%;
+    }
+    
+    .about-stats {
+        gap: 20px;
+    }
+    
+    .about-stats strong {
+        font-size: 1.5rem;
+    }
+    
+    .banner {
+        height: 30vh;
+    }
+    
+    .banner h2 {
+        font-size: 2rem;
+    }
+    
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .menu-card img {
+        height: 180px;
+    }
+    
+    .order-form-box {
+        padding: 40px 30px;
+    }
+    
+    .location-box {
+        min-width: 250px;
+        padding: 30px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 40px 5% 20px;
+    }
+}
+
+/* Regular Phone Screens (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .section-padding {
+        padding: 50px 5%;
+    }
+    
     .navbar {
         flex-direction: column;
         gap: 15px;
@@ -546,43 +698,79 @@ footer {
     }
     
     .nav-menu {
-        gap: 15px;
+        gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
     
+    .nav-menu a {
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        height: 60vh;
+    }
+    
     .hero-content h1 {
-        font-size: 2.8rem;
-        letter-spacing: 4px;
+        font-size: 3rem;
+        letter-spacing: 5px;
     }
     
     .tagline {
-        font-size: 1rem;
+        font-size: 0.9rem;
         letter-spacing: 3px;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .hero-buttons {
+        gap: 15px;
+    }
+    
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
     }
     
     .section-title {
         font-size: 1.8rem;
     }
     
-    .section-padding {
-        padding: 40px 5%;
-    }
-    
     .about {
         flex-direction: column;
+        gap: 30px;
     }
     
-    .menu-items {
-        grid-template-columns: 2,1fr;
+    .about-stats {
+        justify-content: space-between;
+        gap: 15px;
     }
     
-    .menu-card img {
-        height: 180px;
+    .about-stats strong {
+        font-size: 1.5rem;
+    }
+    
+    .banner {
+        height: 25vh;
     }
     
     .banner h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+    
+    .category-title {
+        font-size: 1.5rem;
+    }
+    
+    .menu-items {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .menu-card img {
+        height: 200px;
     }
     
     .order-form-box {
@@ -598,5 +786,214 @@ footer {
     .form-row select,
     .form-row textarea {
         min-width: 100%;
+    }
+    
+    .location-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .location-box {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 5% 20px;
+        text-align: center;
+    }
+}
+
+/* Small Phone Screens (< 576px) */
+@media (max-width: 575px) {
+    .section-padding {
+        padding: 40px 4%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 4%;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .nav-menu {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-menu a {
+        font-size: 0.8rem;
+    }
+    
+    .btn-nav {
+        padding: 8px 18px;
+        font-size: 0.8rem;
+    }
+    
+    .hero {
+        height: 55vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+        letter-spacing: 3px;
+    }
+    
+    .tagline {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+    
+    .hero-content p {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .section-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .center-text {
+        margin-bottom: 30px;
+    }
+    
+    .about-stats {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .about-stats strong {
+        font-size: 1.8rem;
+    }
+    
+    .banner {
+        height: 20vh;
+        background-attachment: scroll;
+    }
+    
+    .banner h2 {
+        font-size: 1.2rem;
+        padding: 0 15px;
+    }
+    
+    .category-title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .menu-items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .menu-card img {
+        height: 160px;
+    }
+    
+    .card-content {
+        padding: 15px;
+    }
+    
+    .card-content h4 {
+        font-size: 1rem;
+    }
+    
+    .card-content p {
+        font-size: 0.8rem;
+    }
+    
+    .price {
+        font-size: 1.2rem;
+    }
+    
+    .btn-order {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    
+    .order-form-box {
+        padding: 25px 15px;
+    }
+    
+    .form-row input,
+    .form-row select,
+    .form-row textarea {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    .form-btn {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    
+    .location-box {
+        padding: 25px;
+        min-width: 100%;
+    }
+    
+    .location-box h3 {
+        font-size: 1.2rem;
+    }
+    
+    .location-box p {
+        font-size: 0.85rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 4% 15px;
+        text-align: center;
+    }
+    
+    .footer-col h4 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-col ul li {
+        font-size: 0.85rem;
+    }
+    
+    .footer-col p {
+        font-size: 0.8rem;
+    }
+    
+    .footer-bottom {
+        padding: 10px 0;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.7rem;
     }
 }
